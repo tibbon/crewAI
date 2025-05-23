@@ -1,6 +1,6 @@
 [project]
 name = "crewai"
-version = "0.120.1"
+version = "0.121.0"
 description = "Cutting-edge framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
@@ -67,6 +67,9 @@ docling = [
 aisuite = [
     "aisuite>=0.1.10",
 ]
+postgres = [
+    "psycopg[pool]>=3.1.12",
+]
 
 [tool.uv]
 dev-dependencies = [
@@ -87,6 +90,7 @@ dev-dependencies = [
     "pytest-recording>=0.13.2",
     "pytest-randomly>=3.16.0",
     "pytest-timeout>=2.3.1",
+    "psycopg[pool]>=3.1.12",
 ]
 
 [project.scripts]
